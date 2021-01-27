@@ -18,15 +18,31 @@ import QuizLogo from '../src/components/QuizLogo'
 //   background-position: center;
 // `;
 
+const Input = styled.input`
+    width: 100%;
+    height: 40px;
+    border-radius: 3.5px;
+    background: transparent;
+    border: 1px solid ${({ theme }) => theme.colors.secondary};
+    padding: 7px 15px;
+    font: inherit;
+    color: ${({ theme }) => theme.colors.contrastText};
+    &::placeholder { /* Chrome/Opera/Safari */
+     color: ${({ theme }) => theme.colors.contrastText};
+    }
+`;
 
 const Button = styled.button`
-  display: inline-block;
-  background: #2ecc71;
-  color: white;
-  font-size: 16px;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border-radius: 3px;
+    width: 100%;
+    height: 36px;
+    border-radius: 4px;
+    margin-top: 25px;
+    margin-bottom: 32px;
+    background: ${({ theme }) => theme.colors.primary };
+    border: 1px solid ${({ theme }) => theme.colors.secondary};
+    padding-left: 15px;
+    font: inherit;
+    color: ${({ theme }) => theme.colors.contrastText};
   
 `
 
@@ -65,29 +81,30 @@ export default function Home() {
             }}>
 
 
-              <input onChange={function(event){
+              <Input onChange={function(event){
                   setName(event.target.value)
                 }}
                 placeholder='Seu nome'
                 />
+
+              <Button>
+                  JOGAR
+              </Button>
+            </form>
+
+          </Widget.Content>
+        </Widget>
                 
                 
               
 
               
-              <Button>
-                  JOGAR
-              </Button>
               
                 
                
 
               
               
-
-            </form>
-          </Widget.Content>
-        </Widget>
 
 
 
