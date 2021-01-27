@@ -36,10 +36,26 @@ export default function quiz(){
                     <Widget.Header>
                         <h1>Quiz</h1>
                     </Widget.Header>
+                    
 
                     <Widget.Content>
                         <p>THIS IS LOREM IMPSUM</p>
                     </Widget.Content>
+                </Widget>
+            </QuizContainer>
+        </QuizBackground>
+
+
+    )
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -47,19 +63,3 @@ export default function quiz(){
 
 
 
-
-                </Widget>
-
-
-
-
-
-
-
-
-            </QuizContainer>
-        </QuizBackground>
-
-
-    )
-}
