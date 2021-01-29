@@ -3,12 +3,12 @@ import styled from "styled-components";
 import { useRouter } from "next/router";
 import Head from "next/head";
 
-import db from "../db.json";
-import Widget from "../src/components/Widget";
-import QuizBackground from "../src/components/QuizBackground";
-import AlternativesForm from "../src/components/AlterrnativesForm";
-import Footer from "../src/components/Footer";
-import GitHubCorner from "../src/components/GitHubCorner";
+import db from "../../db.json";
+import Widget from "../../src/components/Widget";
+import QuizBackground from "../../src/components/QuizBackground";
+import AlternativesForm from "../../src/components/AlterrnativesForm";
+import Footer from "../../src/components/Footer";
+import GitHubCorner from "../../src/components/GitHubCorner";
 
 
 const Button = styled.button`

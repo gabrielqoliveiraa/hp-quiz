@@ -100,7 +100,7 @@ export default function Home() {
 
               
               
-                
+                  
                
 
               
@@ -113,8 +113,28 @@ export default function Home() {
         <Widget>
           <Widget.Content>
             <h1></h1>
+            
+            <ul>
+              
+                {db.external.map((linkExterno) => {
+                  const [project, user] = linkExterno
+                    .replace(/\//g,'')
+                    .replace('https:','')
+                    .replace('.vercel.app','')
+                    .split('.');
 
-            <p>lorem ipsum dolor sit amet...</p>
+
+
+                  return (
+                    <li key={linkExterno}>
+                      <Widget.Topic href={linkExterno}>
+                        {`${user} / ${project}`}
+                      </Widget.Topic>
+                    </li>
+                  )
+                })}
+
+            </ul>
           </Widget.Content>
         </Widget>
         <Footer />
