@@ -5,7 +5,7 @@ import Widget from '../../components/Widget';
 import QuizLogo from '../../components/QuizLogo';
 import QuizBackground from '../../components/QuizBackground';
 import QuizContainer from '../../components/QuizContainer';
-import AlternativesForm from '../../components/AlternativesForm';
+import AlternativesForm from '../../components/AlterrnativesForm';
 import Button from '../../components/Button';
 import BackLinkArrow from '../../components/BackLinkArrow';
 
