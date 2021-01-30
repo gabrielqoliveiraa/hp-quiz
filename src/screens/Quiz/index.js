@@ -1,5 +1,5 @@
 import React from 'react';
-//import { Lottie } from '@crello/react-lottie';
+import { Lottie } from '@crello/react-lottie';
 // import db from '../../../db.json';
 import Widget from '../../components/Widget';
 import QuizLogo from '../../components/QuizLogo';
