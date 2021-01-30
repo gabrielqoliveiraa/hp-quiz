@@ -40,8 +40,8 @@ Harry Potter Quiz
 
 ## Getting started
 
-📩  - Utilizando o Next Js, é possível dar deploy diretamente por meio do site da Vercel. A qual é responsável pelo framework. 
-📫	- Acesse https://hpquiz.gabrielqoliveiraa.vercel.app/ 
+📩  - Utilizando o Next Js, é possível dar deploy diretamente por meio do site da Vercel. A qual é responsável pelo framework. <br>
+📫	- Acesse https://hpquiz.gabrielqoliveiraa.vercel.app/  <br>
 📤  - Teste a aplicação
 
 ## License
