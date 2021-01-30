@@ -17,7 +17,7 @@ Harry Potter Quiz
 </p>
 
 <div>
-  <img src="https://ibb.co/tPJKh6v" alt="demo-web" height="425">
+  <img src="https://i.ibb.co/847sBwf/PRINT.png" alt="demo-web" height="425">
 </div>
 
 <hr />
