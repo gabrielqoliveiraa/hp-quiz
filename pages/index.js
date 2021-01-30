@@ -9,6 +9,8 @@ import QuizBackground from "../src/components/QuizBackground";
 import Footer from "../src/components/Footer";
 import GitHubCorner from "../src/components/GitHubCorner";
 import QuizLogo from "../src/components/QuizLogo";
+import Link from '../src/components/Link';
+
 
 const Input = styled.input`
   width: 100%;
@@ -98,7 +100,9 @@ export default function Home() {
 
                 return (
                   <li key={linkExterno}>
-                    <Widget.Topic href={linkExterno}>
+                    <Widget.Topic
+                    as={Link}
+                     href={`/quiz/${project}___${user}`}>
                       {`${user} / ${project}`}
                     </Widget.Topic>
                   </li>
