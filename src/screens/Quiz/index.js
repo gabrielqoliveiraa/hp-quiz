@@ -1,5 +1,8 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { Lottie } from '@crello/react-lottie';
+import styled from "styled-components";
+
 // import db from '../../../db.json';
 import Widget from '../../components/Widget';
 import QuizLogo from '../../components/QuizLogo';
@@ -8,8 +11,34 @@ import QuizContainer from '../../components/QuizContainer';
 import AlternativesForm from '../../components/AlterrnativesForm';
 import Button from '../../components/Button';
 import BackLinkArrow from '../../components/BackLinkArrow';
-
 import loadingAnimation from './animations/loading.json';
+
+
+const TitleConfirm = styled.p`
+    background-position: center;
+    margin-top: 24px;
+    width: 100%;
+    height: 40px;
+    display: block;
+    border-radius: 3px;
+    color: ${({ theme }) => theme.colors.primary };
+    background-color: transparent;
+`
+
+
+const TitleReject = styled.p`
+    background-position: center;
+    margin-top: 24px;
+    width: 100%;
+    height: 40px;
+    display: block;
+    border-radius: 3px;
+    color: red;
+    background-color: transparent;
+`
+
+
+
 
 function ResultWidget({ results }) {
   return (
@@ -151,8 +180,8 @@ function QuestionWidget({
           <Button type="submit" disabled={!hasAlternativeSelected}>
             Confirmar
           </Button>
-          {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
-          {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
+          {isQuestionSubmited && isCorrect && <TitleConfirm>VOCÊ ACERTOU</TitleConfirm>}
+          {isQuestionSubmited && !isCorrect && <TitleReject>Você errou!</TitleReject>}
         </AlternativesForm>
       </Widget.Content>
     </Widget>

@@ -88,7 +88,7 @@ export default function Home() {
 
         <Widget>
           <Widget.Content>
-            <h1></h1>
+            <h1>QUIZES</h1>
 
             <ul>
               {db.external.map((linkExterno) => {
